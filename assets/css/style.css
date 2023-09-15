@@ -1,3 +1,32 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
+}
+
 :root {
   --color-brand-light: #819b57;
   --color-brand-dark: #465929;
@@ -12,6 +41,14 @@ ul {
 
 body {
   color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+address {
+  font-size: normal;
 }
 
 /* button */
@@ -21,6 +58,7 @@ body {
   border: 2px solid var(--color-brand-light);
   background: var(--color-brand-light);
   cursor: pointer;
+  font-weight: 600;
 }
 
 .button-order:hover {
@@ -35,11 +73,15 @@ body {
 
 .link:hover {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 /* hero section */
 .hero-title {
   color: var(--color-primary-light);
+  font-weight: 900;
+  font-size: 128px;
+  text-align: center;
 }
 
 .hero-title .accent {
@@ -52,6 +94,62 @@ body {
   color: var(--color-primary-light);
 }
 
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+/* tradirion text */
+
+.traditional-text .brand {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+.traditional-text .uppercase {
+  text-transform: uppercase;
+}
+
+/* shefs section */
+
+.shef-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* forms section */
+.format-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.format-title .formant-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* footer */
+.adress-link {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+
+.adress-link:hover {
+  color: var(--color-brand-light);
+}
+
+.adress-copyright {
+  font-size: 14px;
 }
